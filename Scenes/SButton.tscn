@@ -1,0 +1,146 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/SButton.gd" type="Script" id=1]
+[ext_resource path="res://Images/BlackButton.png" type="Texture" id=2]
+[ext_resource path="res://Images/Chord.png" type="Texture" id=3]
+[ext_resource path="res://Font/DejaVuSerif.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="SButton" type="TextureButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -23.0
+margin_top = -23.0
+margin_right = 23.0
+margin_bottom = 23.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+toggle_mode = true
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Round1" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -3.0
+margin_top = -3.0
+margin_right = 3.0
+margin_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Round2" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -6.0
+margin_top = -6.0
+margin_right = 6.0
+margin_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Round3" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -9.0
+margin_top = -9.0
+margin_right = 9.0
+margin_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Round4" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -12.0
+margin_top = -12.0
+margin_right = 12.0
+margin_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 7
+size_flags_vertical = 7
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Note" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -31.0
+margin_top = -23.0
+margin_right = 31.0
+margin_bottom = 1.0
+grow_horizontal = 2
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "A♭"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Interval" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -16.0
+margin_top = 2.0
+margin_right = 17.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Aug4"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="toggled" from="." to="." method="_on_SButton_toggled"]

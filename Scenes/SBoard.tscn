@@ -1,0 +1,761 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/SButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/SBoard.gd" type="Script" id=3]
+
+[node name="SBoard" type="Control"]
+anchor_left = 0.00976563
+anchor_top = 0.035
+anchor_right = 0.576172
+anchor_bottom = 0.996667
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="SButton4" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.28109
+anchor_top = 0.876444
+anchor_right = 0.380015
+anchor_bottom = 0.976011
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 0
+
+[node name="SButton5" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.394113
+anchor_top = 0.835491
+anchor_right = 0.493038
+anchor_bottom = 0.935059
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 2
+
+[node name="SButton6" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.505329
+anchor_top = 0.792719
+anchor_right = 0.604254
+anchor_bottom = 0.892286
+margin_left = 1.52588e-05
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 4
+
+[node name="SButton7" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.616544
+anchor_top = 0.750856
+anchor_right = 0.715469
+anchor_bottom = 0.850423
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 6
+
+[node name="SButton8" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+position = "right"
+degree = 1
+
+[node name="SButton9" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+position = "right"
+degree = 3
+
+[node name="SButton10" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+position = "right"
+degree = 5
+
+[node name="SButton11" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+position = "right"
+
+[node name="SButton12" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+position = "right"
+degree = 10
+
+[node name="SButton13" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.336697
+anchor_top = 0.73038
+anchor_right = 0.435622
+anchor_bottom = 0.829947
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 7
+
+[node name="SButton14" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.449269
+anchor_top = 0.686242
+anchor_right = 0.548194
+anchor_bottom = 0.785809
+margin_left = 0.0
+margin_top = 0.0
+margin_right = -1.52588e-05
+margin_bottom = 0.0
+degree = 9
+
+[node name="SButton15" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.56184
+anchor_top = 0.642104
+anchor_right = 0.660765
+anchor_bottom = 0.741671
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+degree = 11
+
+[node name="SButton16" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.28109
+anchor_top = 0.876444
+anchor_right = 0.380015
+anchor_bottom = 0.976011
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+degree = 0
+octave = 1
+
+[node name="SButton17" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.394113
+anchor_top = 0.835491
+anchor_right = 0.493038
+anchor_bottom = 0.935059
+margin_left = 0.374557
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+degree = 2
+octave = 1
+
+[node name="SButton18" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.505329
+anchor_top = 0.792719
+anchor_right = 0.604254
+anchor_bottom = 0.892286
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+degree = 4
+octave = 1
+
+[node name="SButton19" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.616544
+anchor_top = 0.750856
+anchor_right = 0.715469
+anchor_bottom = 0.850423
+margin_left = 0.374603
+margin_top = -146.647
+margin_right = 0.374603
+margin_bottom = -146.647
+degree = 6
+octave = 1
+
+[node name="SButton20" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+position = "right"
+degree = 1
+octave = 1
+
+[node name="SButton21" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = 0.374603
+margin_top = -146.647
+margin_right = 0.374634
+margin_bottom = -146.647
+position = "right"
+degree = 3
+octave = 1
+
+[node name="SButton22" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+position = "right"
+degree = 5
+octave = 1
+
+[node name="SButton23" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = 0.374603
+margin_top = -146.647
+margin_right = 0.374603
+margin_bottom = -146.647
+position = "right"
+octave = 1
+
+[node name="SButton24" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = 0.374603
+margin_top = -146.647
+margin_right = 0.374634
+margin_bottom = -146.647
+position = "right"
+degree = 10
+octave = 1
+
+[node name="SButton25" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.336697
+anchor_top = 0.73038
+anchor_right = 0.435622
+anchor_bottom = 0.829947
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374573
+margin_bottom = -146.647
+degree = 7
+octave = 1
+
+[node name="SButton26" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.449269
+anchor_top = 0.686242
+anchor_right = 0.548194
+anchor_bottom = 0.785809
+margin_left = 0.374573
+margin_top = -146.647
+margin_right = 0.374542
+margin_bottom = -146.647
+degree = 9
+octave = 1
+
+[node name="SButton27" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.56184
+anchor_top = 0.642104
+anchor_right = 0.660765
+anchor_bottom = 0.741671
+margin_left = 0.374603
+margin_top = -146.647
+margin_right = 0.374603
+margin_bottom = -146.647
+degree = 11
+octave = 1
+
+[node name="SButton28" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.28109
+anchor_top = 0.876444
+anchor_right = 0.380015
+anchor_bottom = 0.976011
+margin_left = 0.374573
+margin_top = -293.855
+margin_right = 0.374573
+margin_bottom = -293.855
+degree = 0
+octave = 2
+
+[node name="SButton29" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.394113
+anchor_top = 0.835491
+anchor_right = 0.493038
+anchor_bottom = 0.935059
+margin_left = 0.374557
+margin_top = -293.855
+margin_right = 0.374573
+margin_bottom = -293.855
+degree = 2
+octave = 2
+
+[node name="SButton30" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.505329
+anchor_top = 0.792719
+anchor_right = 0.604254
+anchor_bottom = 0.892286
+margin_left = 0.374573
+margin_top = -293.856
+margin_right = 0.374573
+margin_bottom = -293.856
+degree = 4
+octave = 2
+
+[node name="SButton31" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.616544
+anchor_top = 0.750856
+anchor_right = 0.715469
+anchor_bottom = 0.850423
+margin_left = 0.374603
+margin_top = -293.856
+margin_right = 0.374603
+margin_bottom = -293.856
+degree = 6
+octave = 2
+
+[node name="SButton32" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = 0.374573
+margin_top = -293.855
+margin_right = 0.374573
+margin_bottom = -293.855
+position = "right"
+degree = 1
+octave = 2
+
+[node name="SButton33" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = 0.374603
+margin_top = -293.855
+margin_right = 0.374634
+margin_bottom = -293.855
+position = "right"
+degree = 3
+octave = 2
+
+[node name="SButton34" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = 0.374573
+margin_top = -293.855
+margin_right = 0.374573
+margin_bottom = -293.855
+position = "right"
+degree = 5
+octave = 2
+
+[node name="SButton40" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.28109
+anchor_top = 0.876444
+anchor_right = 0.380015
+anchor_bottom = 0.976011
+margin_left = 0.0596008
+margin_top = -440.006
+margin_right = 0.0596008
+margin_bottom = -440.006
+degree = 0
+octave = 3
+
+[node name="SButton41" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.394113
+anchor_top = 0.835491
+anchor_right = 0.493038
+anchor_bottom = 0.935059
+margin_left = 0.0595856
+margin_top = -440.006
+margin_right = 0.0596008
+margin_bottom = -440.006
+degree = 2
+octave = 3
+
+[node name="SButton42" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.505329
+anchor_top = 0.792719
+anchor_right = 0.604254
+anchor_bottom = 0.892286
+margin_left = 0.0596313
+margin_top = -440.006
+margin_right = 0.0596313
+margin_bottom = -440.006
+degree = 4
+octave = 3
+
+[node name="SButton43" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.616544
+anchor_top = 0.750856
+anchor_right = 0.715469
+anchor_bottom = 0.850423
+margin_left = 0.0596619
+margin_top = -440.006
+margin_right = 0.0596619
+margin_bottom = -440.006
+degree = 6
+octave = 3
+
+[node name="SButton44" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = 0.0596313
+margin_top = -440.006
+margin_right = 0.0596313
+margin_bottom = -440.006
+position = "right"
+degree = 1
+octave = 3
+
+[node name="SButton45" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = 0.0596619
+margin_top = -440.006
+margin_right = 0.0596924
+margin_bottom = -440.006
+position = "right"
+degree = 3
+octave = 3
+
+[node name="SButton46" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = 0.0596313
+margin_top = -440.006
+margin_right = 0.0596313
+margin_bottom = -440.006
+position = "right"
+degree = 5
+octave = 3
+
+[node name="SButton35" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = 0.374603
+margin_top = -293.855
+margin_right = 0.374603
+margin_bottom = -293.855
+position = "right"
+octave = 2
+
+[node name="SButton36" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = 0.374603
+margin_top = -293.855
+margin_right = 0.374634
+margin_bottom = -293.855
+position = "right"
+degree = 10
+octave = 2
+
+[node name="SButton47" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = -391.437
+margin_top = -0.420471
+margin_right = -391.437
+margin_bottom = -0.420471
+position = "left"
+degree = 1
+
+[node name="SButton48" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = -391.437
+margin_top = -0.420471
+margin_right = -391.437
+margin_bottom = -0.420471
+position = "left"
+degree = 3
+
+[node name="SButton49" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = -391.437
+margin_top = -0.420471
+margin_right = -391.437
+margin_bottom = -0.420471
+position = "left"
+degree = 5
+
+[node name="SButton50" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = -391.437
+margin_top = -0.420471
+margin_right = -391.437
+margin_bottom = -0.420471
+position = "left"
+
+[node name="SButton51" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = -391.437
+margin_top = -0.420471
+margin_right = -391.437
+margin_bottom = -0.420471
+position = "left"
+degree = 10
+
+[node name="SButton52" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = -391.063
+margin_top = -147.067
+margin_right = -391.063
+margin_bottom = -147.067
+position = "left"
+degree = 1
+octave = 1
+
+[node name="SButton53" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = -391.063
+margin_top = -147.067
+margin_right = -391.063
+margin_bottom = -147.067
+position = "left"
+degree = 3
+octave = 1
+
+[node name="SButton54" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = -391.063
+margin_top = -147.067
+margin_right = -391.063
+margin_bottom = -147.067
+position = "left"
+degree = 5
+octave = 1
+
+[node name="SButton55" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = -391.063
+margin_top = -147.067
+margin_right = -391.063
+margin_bottom = -147.067
+position = "left"
+octave = 1
+
+[node name="SButton56" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = -391.063
+margin_top = -147.067
+margin_right = -391.063
+margin_bottom = -147.067
+position = "left"
+degree = 10
+octave = 1
+
+[node name="SButton57" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = -391.063
+margin_top = -294.276
+margin_right = -391.063
+margin_bottom = -294.276
+position = "left"
+degree = 1
+octave = 2
+
+[node name="SButton58" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = -391.063
+margin_top = -294.276
+margin_right = -391.063
+margin_bottom = -294.276
+position = "left"
+degree = 3
+octave = 2
+
+[node name="SButton59" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = -391.063
+margin_top = -294.276
+margin_right = -391.063
+margin_bottom = -294.276
+position = "left"
+degree = 5
+octave = 2
+
+[node name="SButton60" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.674412
+anchor_top = 0.855513
+anchor_right = 0.773337
+anchor_bottom = 0.95508
+margin_left = -389.49
+margin_top = -440.427
+margin_right = -389.49
+margin_bottom = -440.427
+position = "left"
+degree = 1
+octave = 3
+
+[node name="SButton61" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.786984
+anchor_top = 0.814105
+anchor_right = 0.885908
+anchor_bottom = 0.913672
+margin_left = -391.378
+margin_top = -440.427
+margin_right = -391.378
+margin_bottom = -440.427
+position = "left"
+degree = 3
+octave = 3
+
+[node name="SButton62" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.898199
+anchor_top = 0.769512
+anchor_right = 0.997124
+anchor_bottom = 0.869079
+margin_left = -391.378
+margin_top = -440.427
+margin_right = -391.378
+margin_bottom = -440.427
+position = "left"
+degree = 5
+octave = 3
+
+[node name="SButton63" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.73002
+anchor_top = 0.706718
+anchor_right = 0.828944
+anchor_bottom = 0.806285
+margin_left = -391.063
+margin_top = -294.276
+margin_right = -391.063
+margin_bottom = -294.276
+position = "left"
+octave = 2
+
+[node name="SButton64" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.841235
+anchor_top = 0.6644
+anchor_right = 0.94016
+anchor_bottom = 0.763967
+margin_left = -391.063
+margin_top = -294.276
+margin_right = -391.063
+margin_bottom = -294.276
+position = "left"
+degree = 10
+octave = 2
+
+[node name="SButton37" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.336697
+anchor_top = 0.73038
+anchor_right = 0.435622
+anchor_bottom = 0.829947
+margin_left = 0.374573
+margin_top = -293.855
+margin_right = 0.374573
+margin_bottom = -293.855
+degree = 7
+octave = 2
+
+[node name="SButton38" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.449269
+anchor_top = 0.686242
+anchor_right = 0.548194
+anchor_bottom = 0.785809
+margin_left = 0.374573
+margin_top = -293.855
+margin_right = 0.374542
+margin_bottom = -293.855
+degree = 9
+octave = 2
+
+[node name="SButton39" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.56184
+anchor_top = 0.642104
+anchor_right = 0.660765
+anchor_bottom = 0.741671
+margin_left = 0.374603
+margin_top = -293.855
+margin_right = 0.374603
+margin_bottom = -293.855
+degree = 11
+octave = 2
