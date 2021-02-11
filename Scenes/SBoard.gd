@@ -22,7 +22,6 @@ func button_selected(degree):
 
 func set_chord(chord, state):
     for button in self.get_children():
-        print("chord: " + str(state and chord))
         if state:
             button.chord_vis = chord
         else:
