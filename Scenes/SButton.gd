@@ -16,7 +16,10 @@ var sel_degree = null
 var sel_note= null
 var full_degree = null
 var chord_vis = "major"
+var scale_vis = "Major"
 var voice = null
+var mute = true
+var lock = false
 
 const pitches = {"C":1,
                  "C♯":1.059463,
@@ -78,7 +81,10 @@ const relative_int =   {[0,0]:"P1",
                         [3,-5]:"dd5",
                         [3,-4]:"dd6",
                         [4,-6]:"dd7"}
-        
+                        
+const scales = {"Major":["P1", "M2", "M3", "P4", "P5", "m6", "M7"],
+                "Minor":["P1", "M2", "m3", "P4", "P5", "d6", "m7"]}
+
 const order = ["G♭", "D♭", "A♭", "E♭", "B♭", 
                "F", "C",  "G", "D", "A", "E", "B", 
                "F♯", "C♯", "G♯", "D♯", "A♯"]
@@ -156,6 +162,8 @@ func set_audio():
     add_child(voice)
 
 func _on_SButton_toggled(_button_pressed):
+    if lock:
+        return
     if full_degree != sel_degree:
         emit_signal("selected", full_degree, $Note.text, row, col)
     else:
@@ -169,13 +177,15 @@ func button_selected(new_degree, note_name, new_row, new_col):
     set_interval()
     set_chords()
 
-
+func mute(is_on):
+    mute = is_on
+    
+func lock(is_on):
+    lock = is_on
 
 func _on_SButton_button_down():
-    voice.playing = true
+    if not mute:
+        voice.playing = true
     
-
-
-
 func _on_SButton_button_up():
     voice.playing = false

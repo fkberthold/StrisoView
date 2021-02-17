@@ -116,6 +116,7 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
+octave = 1
 row = 1
 col = 6
 
@@ -130,6 +131,7 @@ margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
 degree = 10
+octave = 1
 row = 1
 col = 7
 
@@ -143,6 +145,7 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 7
+octave = 1
 row = 2
 col = 3
 
@@ -156,6 +159,7 @@ margin_top = 0.0
 margin_right = -0.943878
 margin_bottom = 0.0
 degree = 9
+octave = 1
 row = 2
 col = 4
 
@@ -169,6 +173,7 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 11
+octave = 1
 row = 2
 col = 5
 
@@ -283,7 +288,7 @@ margin_top = -146.647
 margin_right = 0.374603
 margin_bottom = -146.647
 position = "right"
-octave = 1
+octave = 2
 row = 3
 col = 7
 
@@ -298,7 +303,7 @@ margin_right = 0.374634
 margin_bottom = -146.647
 position = "right"
 degree = 10
-octave = 1
+octave = 2
 row = 3
 col = 8
 
@@ -312,7 +317,7 @@ margin_top = -146.647
 margin_right = 0.374573
 margin_bottom = -146.647
 degree = 7
-octave = 1
+octave = 2
 row = 4
 col = 4
 
@@ -326,7 +331,7 @@ margin_top = -146.647
 margin_right = 0.374542
 margin_bottom = -146.647
 degree = 9
-octave = 1
+octave = 2
 row = 4
 col = 5
 
@@ -340,7 +345,7 @@ margin_top = -146.647
 margin_right = 0.374603
 margin_bottom = -146.647
 degree = 11
-octave = 1
+octave = 2
 row = 4
 col = 6
 
@@ -555,7 +560,7 @@ margin_top = -293.855
 margin_right = 0.374603
 margin_bottom = -293.855
 position = "right"
-octave = 2
+octave = 3
 row = 5
 col = 8
 
@@ -570,7 +575,7 @@ margin_right = 0.374634
 margin_bottom = -293.855
 position = "right"
 degree = 10
-octave = 2
+octave = 3
 row = 5
 col = 9
 
@@ -625,6 +630,7 @@ margin_top = -0.420471
 margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
+octave = 1
 row = 3
 col = 1
 
@@ -639,6 +645,7 @@ margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
 degree = 10
+octave = 1
 row = 3
 col = 2
 
@@ -697,7 +704,7 @@ margin_top = -147.067
 margin_right = -391.063
 margin_bottom = -147.067
 position = "left"
-octave = 1
+octave = 2
 row = 5
 col = 2
 
@@ -712,7 +719,7 @@ margin_right = -391.063
 margin_bottom = -147.067
 position = "left"
 degree = 10
-octave = 1
+octave = 2
 row = 5
 col = 3
 
@@ -816,7 +823,7 @@ margin_top = -294.276
 margin_right = -391.063
 margin_bottom = -294.276
 position = "left"
-octave = 2
+octave = 3
 row = 7
 col = 3
 
@@ -831,7 +838,7 @@ margin_right = -391.063
 margin_bottom = -294.276
 position = "left"
 degree = 10
-octave = 2
+octave = 3
 row = 7
 col = 4
 
@@ -845,7 +852,7 @@ margin_top = -293.855
 margin_right = 0.374573
 margin_bottom = -293.855
 degree = 7
-octave = 2
+octave = 3
 row = 6
 col = 5
 
@@ -859,7 +866,7 @@ margin_top = -293.855
 margin_right = 0.374542
 margin_bottom = -293.855
 degree = 9
-octave = 2
+octave = 3
 row = 6
 col = 6
 
@@ -873,6 +880,6 @@ margin_top = -293.855
 margin_right = 0.374603
 margin_bottom = -293.855
 degree = 11
-octave = 2
+octave = 3
 row = 6
 col = 7

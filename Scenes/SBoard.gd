@@ -30,3 +30,19 @@ func set_chord(chord, state):
             button.chord_vis = chord
         else:
             button.chord_vis = null
+
+func set_music_scale(scale, state):
+    for button in self.get_children():
+        if state:
+            button.scale_vis = scale
+        else:
+            button.scale_vis = null
+
+func _on_chkSound_toggled(button_pressed):
+    for button in self.get_children():
+        button.mute(not button_pressed)
+
+
+func _on_chkLock_toggled(button_pressed):
+    for button in self.get_children():
+        button.lock(button_pressed)
