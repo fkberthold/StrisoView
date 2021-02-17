@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/SBoard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Font/DejaVuSerif.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Main.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 20
-outline_color = Color( 0, 0, 0, 1 )
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 2 )
 
 [node name="Control" type="Control"]
@@ -25,108 +27,32 @@ anchor_top = 0.00166667
 anchor_right = 0.941075
 anchor_bottom = 1.0
 
-[node name="Chords" type="VBoxContainer" parent="."]
-margin_right = 140.0
-margin_bottom = 260.0
-
-[node name="Major" type="CheckButton" parent="Chords"]
-margin_right = 197.0
+[node name="Chords" type="Control" parent="."]
+margin_right = 40.0
 margin_bottom = 40.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 1, 0, 0, 1 )
-custom_colors/font_color_hover_pressed = Color( 1, 0, 0, 1 )
-custom_colors/font_color = Color( 1, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
-pressed = true
-text = "Major"
-align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Augmented" type="CheckButton" parent="Chords"]
-margin_top = 44.0
-margin_right = 197.0
-margin_bottom = 84.0
+[node name="ChordsLabel" type="Label" parent="Chords"]
+margin_left = 24.0271
+margin_top = 21.3574
+margin_right = 68.0271
+margin_bottom = 35.3574
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 1, 0.537255, 0, 1 )
-custom_colors/font_color_hover_pressed = Color( 1, 0.537255, 0, 1 )
-custom_colors/font_color = Color( 1, 0.537255, 0, 1 )
-custom_colors/font_color_hover = Color( 1, 0.537255, 0, 1 )
-custom_colors/font_color_pressed = Color( 1, 0.537255, 0, 1 )
-text = "Augmented"
-align = 2
+text = "Chords"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Minor" type="CheckButton" parent="Chords"]
-margin_top = 88.0
-margin_right = 197.0
-margin_bottom = 128.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 0.945098, 1, 0, 1 )
-custom_colors/font_color_hover_pressed = Color( 0.945098, 1, 0, 1 )
-custom_colors/font_color = Color( 0.945098, 1, 0, 1 )
-custom_colors/font_color_hover = Color( 0.945098, 1, 0, 1 )
-custom_colors/font_color_pressed = Color( 0.945098, 1, 0, 1 )
-text = "Minor"
-align = 2
+[node name="ChordsList" type="OptionButton" parent="Chords"]
+margin_left = 17.3529
+margin_top = 66.7419
+margin_right = 210.353
+margin_bottom = 107.742
+custom_fonts/font = SubResource( 2 )
+text = "Chord"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Diminished" type="CheckButton" parent="Chords"]
-margin_top = 132.0
-margin_right = 197.0
-margin_bottom = 172.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 0, 1, 0, 1 )
-custom_colors/font_color_hover_pressed = Color( 0, 1, 0, 1 )
-custom_colors/font_color = Color( 0, 1, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 1, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 1, 0, 1 )
-text = "Diminished"
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Suspended 4th" type="CheckButton" parent="Chords"]
-margin_top = 176.0
-margin_right = 197.0
-margin_bottom = 216.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 0, 0, 1, 1 )
-custom_colors/font_color_hover_pressed = Color( 0, 0, 1, 1 )
-custom_colors/font_color = Color( 0, 0, 1, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 1, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 1, 1 )
-text = "Sus 4"
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Suspended 2nd" type="CheckButton" parent="Chords"]
-margin_top = 220.0
-margin_right = 197.0
-margin_bottom = 260.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color_disabled = Color( 1, 0, 1, 1 )
-custom_colors/font_color_hover_pressed = Color( 1, 0, 1, 1 )
-custom_colors/font_color = Color( 1, 0, 1, 1 )
-custom_colors/font_color_hover = Color( 1, 0, 1, 1 )
-custom_colors/font_color_pressed = Color( 1, 0, 1, 1 )
-text = "Sus 2"
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="toggled" from="Chords/Major" to="." method="_on_Major_toggled"]
-[connection signal="toggled" from="Chords/Augmented" to="." method="_on_Augmented_toggled"]
-[connection signal="toggled" from="Chords/Minor" to="." method="_on_Minor_toggled"]
-[connection signal="toggled" from="Chords/Diminished" to="." method="_on_Diminished_toggled"]
-[connection signal="toggled" from="Chords/Suspended 4th" to="." method="_on_Suspended_4th_toggled"]
-[connection signal="toggled" from="Chords/Suspended 2nd" to="." method="_on_Suspended_2nd_toggled"]
+[connection signal="item_selected" from="Chords/ChordsList" to="." method="_on_Chords_item_selected"]

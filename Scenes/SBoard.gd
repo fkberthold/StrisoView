@@ -16,9 +16,13 @@ func _ready():
 #func _process(delta):
 #    pass
 
-func button_selected(degree):
+func button_selected(degree, note_name, row, col):
+    print([degree, note_name, row, col])
     for button in self.get_children():
-        button.button_selected(degree)
+        button.button_selected(null, null, null, null)
+    for button in self.get_children():
+        button.button_selected(degree, note_name, row, col)
+    print("=========================")
 
 func set_chord(chord, state):
     for button in self.get_children():

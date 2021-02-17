@@ -20,22 +20,26 @@ anchor_left = 0.28109
 anchor_top = 0.876444
 anchor_right = 0.380015
 anchor_bottom = 0.976011
-margin_left = 0.0
+margin_left = -0.943909
 margin_top = 0.0
-margin_right = 0.0
+margin_right = -0.943909
 margin_bottom = 0.0
 degree = 0
+row = 1
+col = 2
 
 [node name="SButton5" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.394113
 anchor_top = 0.835491
 anchor_right = 0.493038
 anchor_bottom = 0.935059
-margin_left = 0.0
+margin_left = -0.943848
 margin_top = 0.0
-margin_right = 0.0
+margin_right = -0.943848
 margin_bottom = 0.0
 degree = 2
+row = 1
+col = 3
 
 [node name="SButton6" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.505329
@@ -47,6 +51,8 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 4
+row = 1
+col = 4
 
 [node name="SButton7" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.616544
@@ -58,6 +64,8 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 6
+row = 1
+col = 5
 
 [node name="SButton8" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -70,6 +78,7 @@ margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
 degree = 1
+col = 5
 
 [node name="SButton9" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -82,6 +91,7 @@ margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
 degree = 3
+col = 6
 
 [node name="SButton10" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -94,6 +104,7 @@ margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
 degree = 5
+col = 7
 
 [node name="SButton11" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -105,6 +116,8 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
+row = 1
+col = 6
 
 [node name="SButton12" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -117,6 +130,8 @@ margin_right = 0.0
 margin_bottom = 0.0
 position = "right"
 degree = 10
+row = 1
+col = 7
 
 [node name="SButton13" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.336697
@@ -128,17 +143,21 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 7
+row = 2
+col = 3
 
 [node name="SButton14" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.449269
 anchor_top = 0.686242
 anchor_right = 0.548194
 anchor_bottom = 0.785809
-margin_left = 0.0
+margin_left = -0.943848
 margin_top = 0.0
-margin_right = -1.52588e-05
+margin_right = -0.943878
 margin_bottom = 0.0
 degree = 9
+row = 2
+col = 4
 
 [node name="SButton15" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.56184
@@ -150,6 +169,8 @@ margin_top = 0.0
 margin_right = 0.0
 margin_bottom = 0.0
 degree = 11
+row = 2
+col = 5
 
 [node name="SButton16" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.28109
@@ -162,6 +183,8 @@ margin_right = 0.374573
 margin_bottom = -146.647
 degree = 0
 octave = 1
+row = 3
+col = 3
 
 [node name="SButton17" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.394113
@@ -174,6 +197,8 @@ margin_right = 0.374573
 margin_bottom = -146.647
 degree = 2
 octave = 1
+row = 3
+col = 4
 
 [node name="SButton18" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.505329
@@ -186,6 +211,8 @@ margin_right = 0.374573
 margin_bottom = -146.647
 degree = 4
 octave = 1
+row = 3
+col = 5
 
 [node name="SButton19" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.616544
@@ -198,6 +225,8 @@ margin_right = 0.374603
 margin_bottom = -146.647
 degree = 6
 octave = 1
+row = 3
+col = 6
 
 [node name="SButton20" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -211,6 +240,8 @@ margin_bottom = -146.647
 position = "right"
 degree = 1
 octave = 1
+row = 2
+col = 6
 
 [node name="SButton21" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -224,6 +255,8 @@ margin_bottom = -146.647
 position = "right"
 degree = 3
 octave = 1
+row = 2
+col = 7
 
 [node name="SButton22" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -237,6 +270,8 @@ margin_bottom = -146.647
 position = "right"
 degree = 5
 octave = 1
+row = 2
+col = 8
 
 [node name="SButton23" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -249,6 +284,8 @@ margin_right = 0.374603
 margin_bottom = -146.647
 position = "right"
 octave = 1
+row = 3
+col = 7
 
 [node name="SButton24" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -262,6 +299,8 @@ margin_bottom = -146.647
 position = "right"
 degree = 10
 octave = 1
+row = 3
+col = 8
 
 [node name="SButton25" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.336697
@@ -274,6 +313,8 @@ margin_right = 0.374573
 margin_bottom = -146.647
 degree = 7
 octave = 1
+row = 4
+col = 4
 
 [node name="SButton26" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.449269
@@ -286,6 +327,8 @@ margin_right = 0.374542
 margin_bottom = -146.647
 degree = 9
 octave = 1
+row = 4
+col = 5
 
 [node name="SButton27" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.56184
@@ -298,18 +341,22 @@ margin_right = 0.374603
 margin_bottom = -146.647
 degree = 11
 octave = 1
+row = 4
+col = 6
 
 [node name="SButton28" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.28109
 anchor_top = 0.876444
 anchor_right = 0.380015
 anchor_bottom = 0.976011
-margin_left = 0.374573
+margin_left = -0.569336
 margin_top = -293.855
-margin_right = 0.374573
+margin_right = -0.569336
 margin_bottom = -293.855
 degree = 0
 octave = 2
+row = 5
+col = 4
 
 [node name="SButton29" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.394113
@@ -322,6 +369,8 @@ margin_right = 0.374573
 margin_bottom = -293.855
 degree = 2
 octave = 2
+row = 5
+col = 5
 
 [node name="SButton30" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.505329
@@ -334,6 +383,8 @@ margin_right = 0.374573
 margin_bottom = -293.856
 degree = 4
 octave = 2
+row = 5
+col = 6
 
 [node name="SButton31" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.616544
@@ -346,6 +397,8 @@ margin_right = 0.374603
 margin_bottom = -293.856
 degree = 6
 octave = 2
+row = 5
+col = 7
 
 [node name="SButton32" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -359,6 +412,8 @@ margin_bottom = -293.855
 position = "right"
 degree = 1
 octave = 2
+row = 4
+col = 7
 
 [node name="SButton33" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -372,6 +427,8 @@ margin_bottom = -293.855
 position = "right"
 degree = 3
 octave = 2
+row = 4
+col = 8
 
 [node name="SButton34" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -385,6 +442,8 @@ margin_bottom = -293.855
 position = "right"
 degree = 5
 octave = 2
+row = 4
+col = 9
 
 [node name="SButton40" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.28109
@@ -397,6 +456,8 @@ margin_right = 0.0596008
 margin_bottom = -440.006
 degree = 0
 octave = 3
+row = 7
+col = 5
 
 [node name="SButton41" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.394113
@@ -409,6 +470,8 @@ margin_right = 0.0596008
 margin_bottom = -440.006
 degree = 2
 octave = 3
+row = 7
+col = 6
 
 [node name="SButton42" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.505329
@@ -421,6 +484,8 @@ margin_right = 0.0596313
 margin_bottom = -440.006
 degree = 4
 octave = 3
+row = 7
+col = 7
 
 [node name="SButton43" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.616544
@@ -433,6 +498,8 @@ margin_right = 0.0596619
 margin_bottom = -440.006
 degree = 6
 octave = 3
+row = 7
+col = 8
 
 [node name="SButton44" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -446,6 +513,8 @@ margin_bottom = -440.006
 position = "right"
 degree = 1
 octave = 3
+row = 6
+col = 8
 
 [node name="SButton45" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -459,6 +528,8 @@ margin_bottom = -440.006
 position = "right"
 degree = 3
 octave = 3
+row = 6
+col = 9
 
 [node name="SButton46" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -472,6 +543,7 @@ margin_bottom = -440.006
 position = "right"
 degree = 5
 octave = 3
+row = 6
 
 [node name="SButton35" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -484,6 +556,8 @@ margin_right = 0.374603
 margin_bottom = -293.855
 position = "right"
 octave = 2
+row = 5
+col = 8
 
 [node name="SButton36" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -497,6 +571,8 @@ margin_bottom = -293.855
 position = "right"
 degree = 10
 octave = 2
+row = 5
+col = 9
 
 [node name="SButton47" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -509,6 +585,7 @@ margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
 degree = 1
+row = 2
 
 [node name="SButton48" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -521,6 +598,8 @@ margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
 degree = 3
+row = 2
+col = 1
 
 [node name="SButton49" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -533,6 +612,8 @@ margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
 degree = 5
+row = 2
+col = 2
 
 [node name="SButton50" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -544,6 +625,8 @@ margin_top = -0.420471
 margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
+row = 3
+col = 1
 
 [node name="SButton51" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -556,6 +639,8 @@ margin_right = -391.437
 margin_bottom = -0.420471
 position = "left"
 degree = 10
+row = 3
+col = 2
 
 [node name="SButton52" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -569,6 +654,8 @@ margin_bottom = -147.067
 position = "left"
 degree = 1
 octave = 1
+row = 4
+col = 1
 
 [node name="SButton53" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -582,6 +669,8 @@ margin_bottom = -147.067
 position = "left"
 degree = 3
 octave = 1
+row = 4
+col = 2
 
 [node name="SButton54" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -595,6 +684,8 @@ margin_bottom = -147.067
 position = "left"
 degree = 5
 octave = 1
+row = 4
+col = 3
 
 [node name="SButton55" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -607,6 +698,8 @@ margin_right = -391.063
 margin_bottom = -147.067
 position = "left"
 octave = 1
+row = 5
+col = 2
 
 [node name="SButton56" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -620,6 +713,8 @@ margin_bottom = -147.067
 position = "left"
 degree = 10
 octave = 1
+row = 5
+col = 3
 
 [node name="SButton57" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -633,6 +728,8 @@ margin_bottom = -294.276
 position = "left"
 degree = 1
 octave = 2
+row = 6
+col = 2
 
 [node name="SButton58" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -646,6 +743,8 @@ margin_bottom = -294.276
 position = "left"
 degree = 3
 octave = 2
+row = 6
+col = 3
 
 [node name="SButton59" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -659,6 +758,8 @@ margin_bottom = -294.276
 position = "left"
 degree = 5
 octave = 2
+row = 6
+col = 4
 
 [node name="SButton60" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.674412
@@ -672,6 +773,8 @@ margin_bottom = -440.427
 position = "left"
 degree = 1
 octave = 3
+row = 8
+col = 3
 
 [node name="SButton61" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.786984
@@ -685,6 +788,8 @@ margin_bottom = -440.427
 position = "left"
 degree = 3
 octave = 3
+row = 8
+col = 4
 
 [node name="SButton62" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.898199
@@ -698,6 +803,8 @@ margin_bottom = -440.427
 position = "left"
 degree = 5
 octave = 3
+row = 8
+col = 5
 
 [node name="SButton63" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.73002
@@ -710,6 +817,8 @@ margin_right = -391.063
 margin_bottom = -294.276
 position = "left"
 octave = 2
+row = 7
+col = 3
 
 [node name="SButton64" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.841235
@@ -723,6 +832,8 @@ margin_bottom = -294.276
 position = "left"
 degree = 10
 octave = 2
+row = 7
+col = 4
 
 [node name="SButton37" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.336697
@@ -735,6 +846,8 @@ margin_right = 0.374573
 margin_bottom = -293.855
 degree = 7
 octave = 2
+row = 6
+col = 5
 
 [node name="SButton38" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.449269
@@ -747,6 +860,8 @@ margin_right = 0.374542
 margin_bottom = -293.855
 degree = 9
 octave = 2
+row = 6
+col = 6
 
 [node name="SButton39" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.56184
@@ -759,3 +874,5 @@ margin_right = 0.374603
 margin_bottom = -293.855
 degree = 11
 octave = 2
+row = 6
+col = 7

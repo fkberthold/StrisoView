@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/StrLoop - C2.ogg-7cedd6b646a2cb11bab9f021cc8f362f.oggstr"
+
+[deps]
+
+source_file="res://Sounds/StrLoop - C2.ogg"
+dest_files=[ "res://.import/StrLoop - C2.ogg-7cedd6b646a2cb11bab9f021cc8f362f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
