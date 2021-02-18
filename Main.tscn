@@ -92,7 +92,6 @@ __meta__ = {
 }
 
 [node name="ModesList" type="OptionButton" parent="Scales"]
-visible = false
 margin_left = 6.02638
 margin_top = 106.385
 margin_right = 199.026
@@ -131,5 +130,6 @@ __meta__ = {
 }
 [connection signal="item_selected" from="Chords/ChordsList" to="." method="_on_Chords_item_selected"]
 [connection signal="item_selected" from="Scales/ScalesList" to="." method="_on_ScalesList_item_selected"]
+[connection signal="item_selected" from="Scales/ModesList" to="." method="_on_ModesList_item_selected"]
 [connection signal="toggled" from="chkSound" to="SBoard" method="_on_chkSound_toggled"]
 [connection signal="toggled" from="chkLock" to="SBoard" method="_on_chkLock_toggled"]
