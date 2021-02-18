@@ -61,7 +61,6 @@ __meta__ = {
 }
 
 [node name="Scales" type="Control" parent="."]
-visible = false
 margin_left = 5.66327
 margin_top = 139.694
 margin_right = 45.6633
