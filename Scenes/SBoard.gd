@@ -9,10 +9,19 @@ const scales = {"Major":["P1", "M2", "M3", "P4", "P5", "M6", "M7"],
 				"Hungarian Minor":["P1","M2","m3","A4","P5","m6","M7"],
 				"Major Pentatonic":["P1","M2","M3","P5","M6"],
 				"Minor Pentatonic":["P1","m3","P4","P5","m7"],
-				"Six-Note Blues":["P1", "m3","P4","A4","P5","m7"]}
+				"Blues":["P1", "m3","P4","d5","P5","m7"]}
 const modes = ["Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"]
 var sel_scale = "Major"
 var sel_mode = 0
+var view = "Scales"
+const chord_trans = {
+	"Major":"major",
+	"Augmented":"augmented",
+	"Minor":"minor",
+	"Diminished":"diminished",
+	"Suspended 4th":"sus4",
+	"Suspended 2nd":"sus2"
+}
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -24,10 +33,6 @@ func _ready():
 	for button in self.get_children():
 		button.connect("selected", self, "button_selected")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#    pass
 
 func button_selected(button, degree, note_name, row, col):
 	if note_name:
@@ -45,9 +50,10 @@ func button_selected(button, degree, note_name, row, col):
 	for button in self.get_children():
 		button.button_selected(null, null, null, null)
 		button.hide_scale()
-		
+	
 	if not sel_button:
 		return
+	
 	
 	for button in self.get_children():
 		button.button_selected(degree, note_name, row, col)
@@ -86,7 +92,7 @@ func button_selected(button, degree, note_name, row, col):
 func set_chord(chord, state):
 	for button in self.get_children():
 		if state:
-			button.chord_vis = chord
+			button.chord_vis = chord_trans[chord]
 		else:
 			button.chord_vis = null
 	if sel_button:

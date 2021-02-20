@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Font/DejaVuSerif.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="ButtonGroup" id=2]
+
+[node name="Major" type="Button"]
+margin_left = -5.0
+margin_top = -2.0
+margin_right = 232.0
+margin_bottom = 37.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_pressed = Color( 0.741176, 0, 0, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "Major"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,17 +1,14 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/SBoard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Font/DejaVuSerif.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Main.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 32
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=3]
+size = 40
 font_data = ExtResource( 2 )
 
 [node name="Control" type="Control"]
@@ -21,6 +18,7 @@ size_flags_horizontal = 7
 size_flags_vertical = 7
 script = ExtResource( 3 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -30,77 +28,6 @@ anchor_top = 0.00166667
 anchor_right = 0.941075
 anchor_bottom = 1.0
 
-[node name="Chords" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ChordsLabel" type="Label" parent="Chords"]
-margin_left = 24.0271
-margin_top = 21.3574
-margin_right = 68.0271
-margin_bottom = 35.3574
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Chords"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ChordsList" type="OptionButton" parent="Chords"]
-margin_left = 17.3529
-margin_top = 66.7419
-margin_right = 210.353
-margin_bottom = 107.742
-custom_fonts/font = SubResource( 2 )
-text = "Chord"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Scales" type="Control" parent="."]
-margin_left = 5.66327
-margin_top = 139.694
-margin_right = 45.6633
-margin_bottom = 179.694
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ScalesLabel" type="Label" parent="Scales"]
-margin_left = 7.98119
-margin_top = 6.25537
-margin_right = 122.981
-margin_bottom = 44.2554
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Scales"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ScalesList" type="OptionButton" parent="Scales"]
-margin_left = 6.97025
-margin_top = 53.5276
-margin_right = 199.97
-margin_bottom = 94.5277
-custom_fonts/font = SubResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ModesList" type="OptionButton" parent="Scales"]
-margin_left = 6.02638
-margin_top = 106.385
-margin_right = 199.026
-margin_bottom = 147.385
-custom_fonts/font = SubResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="chkSound" type="CheckBox" parent="."]
 visible = false
 margin_left = 16.0
@@ -108,7 +35,7 @@ margin_top = 534.0
 margin_right = 114.0
 margin_bottom = 561.0
 rect_scale = Vector2( 2, 2 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 pressed = true
@@ -121,15 +48,42 @@ margin_top = 473.592
 margin_right = 114.0
 margin_bottom = 500.592
 rect_scale = Vector2( 2, 2 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 text = "Lock"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="item_selected" from="Chords/ChordsList" to="." method="_on_Chords_item_selected"]
-[connection signal="item_selected" from="Scales/ScalesList" to="." method="_on_ScalesList_item_selected"]
-[connection signal="item_selected" from="Scales/ModesList" to="." method="_on_ModesList_item_selected"]
+
+[node name="View" type="OptionButton" parent="."]
+margin_right = 230.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Scales"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scales" type="VBoxContainer" parent="."]
+margin_left = 5.0
+margin_top = 87.0
+margin_right = 230.0
+margin_bottom = 578.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chords" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 5.0
+margin_top = 87.0
+margin_right = 230.0
+margin_bottom = 578.0
 [connection signal="toggled" from="chkSound" to="SBoard" method="_on_chkSound_toggled"]
 [connection signal="toggled" from="chkLock" to="SBoard" method="_on_chkLock_toggled"]
+[connection signal="item_selected" from="View" to="." method="_on_View_item_selected"]

@@ -20,6 +20,7 @@ var scale_vis = "Major"
 var voice = null
 var mute = true
 var lock = false
+var sel_view = "Scales"
 
 const pitches = {"C":1,
 				 "C♯":1.059463,
@@ -39,13 +40,13 @@ const pitches = {"C":1,
 				 "B♭":1.781797,
 				 "B":1.887749}
 
-const chord_colors = {"root":Color.black,
-					"major":Color.red,
-					"augmented":Color.red,
-					"minor":Color.red,
-					"diminished":Color.red,
-					"sus4":Color.red,
-					"sus2":Color.red}
+const chord_colors = {"root":Color(0.5,0,0,1),
+					"major":Color(0.9,0,0,1),
+					"augmented":Color(0.9,0,0,1),
+					"minor":Color(0.9,0,0,1),
+					"diminished":Color(0.9,0,0,1),
+					"sus4":Color(0.9,0,0,1),
+					"sus2":Color(0.9,0,0,1)}
 					
 const relative_int =   {[0,0]:"P1",
 						[1,0]:"P4",
@@ -122,14 +123,14 @@ func set_interval():
 		$Round1.visible = false
 
 func set_chords():
-	if chord_vis and $Interval.visible and $Interval.text in chords[chord_vis]:
+	if chord_vis and $Interval.visible and $Interval.text in chords[chord_vis.to_lower()]:
 		if full_degree == sel_degree:
 			$Round1.visible = true
 			$Round1.modulate = chord_colors["root"]
 			return
 		else:
 			$Round1.visible = true
-			$Round1.modulate = chord_colors[chord_vis]
+			$Round1.modulate = chord_colors[chord_vis.to_lower()]
 	else:
 		$Round1.visible = false
 		
@@ -173,7 +174,8 @@ func button_selected(new_degree, note_name, new_row, new_col):
 	sel_row = new_row
 	sel_col = new_col
 	set_interval()
-	set_chords()
+	if sel_view == "Chords":
+		set_chords()
 
 func mute(is_on):
 	mute = is_on
@@ -182,15 +184,23 @@ func lock(is_on):
 	lock = is_on
 	
 func show_root():
-	$Scale.visible = true
-	$Scale.modulate = Color(0, 0, 1)
+	if sel_view == "Scales":
+		$Round1.visible = true
+		$Round1.modulate = chord_colors["root"]
+#	$Scale.visible = true
+#	$Scale.modulate = Color(0, 0, 1)
 
 func show_scale():
-	$Scale.visible = true
-	$Scale.modulate = Color(0, 0, 1, 0.39)
+	if sel_view == "Scales":
+		$Round1.visible = true
+		$Round1.modulate = chord_colors["major"]
+#	$Scale.visible = true
+#	$Scale.modulate = Color(0, 0, 1, 0.39)
 	
 func hide_scale():
-	$Scale.visible = false
+	if sel_view == "Scales":
+		$Round1.visible = false
+#	$Scale.visible = false
 
 func _on_SButton_button_down():
 	if not mute:
