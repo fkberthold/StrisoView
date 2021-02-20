@@ -1,6 +1,4 @@
 extends Control
-
-const chords = 	["Major", "Augmented", "Minor", "Diminished", "Suspended 4th", "Suspended 2nd"]
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -9,7 +7,7 @@ var button_group
 
 func set_chords():
 	var button = load("res://Scenes/SelectButton.tscn")
-	for chord in chords:
+	for chord in $SBoard.chord_trans:
 		var chordBtn = button.instance()
 		if not button_group:
 			button_group = chordBtn.group

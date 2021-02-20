@@ -46,7 +46,9 @@ const chord_colors = {"root":Color(0.5,0,0,1),
 					"minor":Color(0.9,0,0,1),
 					"diminished":Color(0.9,0,0,1),
 					"sus4":Color(0.9,0,0,1),
-					"sus2":Color(0.9,0,0,1)}
+					"sus2":Color(0.9,0,0,1),
+					"7th":Color(0.9,0,0,1)
+}
 					
 const relative_int =   {[0,0]:"P1",
 						[1,0]:"P4",
@@ -93,7 +95,8 @@ const chords = {"major":["P1","P5","M3"],
 				"minor":["P1", "P5", "m3"],
 				"diminished":["P1","m3", "d5"],
 				"sus4":["P1", "P4", "P5"],
-				"sus2":["P1", "M2", "P5"]}
+				"sus2":["P1", "M2", "P5"],
+				"7th":["P1", "M3", "P5", "m7"]}
 			 
 
 const intervals = ["Uni", "m2", "M2", "m3", "M3", "P4", "A4", "P5", "m6", "M6", "m7", "M7", "P8"]
@@ -123,14 +126,14 @@ func set_interval():
 		$Round1.visible = false
 
 func set_chords():
-	if chord_vis and $Interval.visible and $Interval.text in chords[chord_vis.to_lower()]:
+	if chord_vis and $Interval.visible and $Interval.text in chords[chord_vis]:
 		if full_degree == sel_degree:
 			$Round1.visible = true
 			$Round1.modulate = chord_colors["root"]
 			return
 		else:
 			$Round1.visible = true
-			$Round1.modulate = chord_colors[chord_vis.to_lower()]
+			$Round1.modulate = chord_colors[chord_vis]
 	else:
 		$Round1.visible = false
 		

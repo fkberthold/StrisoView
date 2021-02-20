@@ -20,7 +20,8 @@ const chord_trans = {
 	"Minor":"minor",
 	"Diminished":"diminished",
 	"Suspended 4th":"sus4",
-	"Suspended 2nd":"sus2"
+	"Suspended 2nd":"sus2",
+	"Dominant 7th":"7th"
 }
 
 # Declare member variables here. Examples:
