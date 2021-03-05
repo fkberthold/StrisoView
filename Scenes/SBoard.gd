@@ -16,12 +16,12 @@ var sel_mode = 0
 var view = "Scales"
 const chord_trans = {
 	"Major":"major",
-	"Augmented":"augmented",
 	"Minor":"minor",
+	"Dominant 7th":"7th",
 	"Diminished":"diminished",
+	"Augmented":"augmented",
 	"Suspended 4th":"sus4",
-	"Suspended 2nd":"sus2",
-	"Dominant 7th":"7th"
+	"Suspended 2nd":"sus2"
 }
 
 # Declare member variables here. Examples:
